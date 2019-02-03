@@ -1,0 +1,113 @@
+.o-icon-group {
+
+  .o-icon {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.o-icon {
+  @include transition();
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  fill: $gray--darkest;
+
+  .o-icon-group--light & {
+    fill: $white;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.o-icon--animated-prompt {
+  background-color: $orange;
+  fill: $white;
+
+  &:hover {
+    transform: translateY(5px);
+  }
+}
+
+.o-icon--animated-prompt-colors {
+  animation-name: animated_prompt_colors;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+.o-icon--animated-prompt-bounce {
+  animation: animated_prompt_colors 8s, animated_prompt_bounce 2s;
+  animation-iteration-count: infinite;
+}
+
+.o-icon--circle-fill {
+  border-radius: 100%;
+  background-color: $blue--main;
+  border-radius: 100%;
+  width: 38px;
+  height: 38px;
+  padding: 7px;
+
+  &.o-icon--close {
+    background-color: transparent;
+
+    &:hover {
+      background-color: $gray;
+      fill: $white;
+    }
+
+    &:active {
+      background-color: $red;
+    }
+  }
+}
+
+@keyframes animated_prompt_colors {
+  0% {
+    background-color: $orange;
+  }
+
+  33% {
+    background-color: $purple;
+  }
+
+  66% {
+    background-color: $red;
+  }
+
+  100% {
+    background-color: $orange;
+  }
+}
+
+@keyframes animated_prompt_bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(7px);
+  }
+
+  60% {
+    transform: translateY(7px);
+  }
+
+  80% {
+    transform: translateY(-2px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,108 @@
+.o-button-group {
+  font-size: 0;
+
+  .o-button-wrapper {
+    margin-right: .75rem;
+    margin-bottom: .75rem;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.o-button-wrapper {
+  display: inline-block;
+  font-size: 1rem;
+  position: relative;
+  left: -2px;
+  z-index: 1;
+}
+
+.o-button {
+  // general resets
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+
+  @include transition();
+  display: inline-block;
+  border-top-left-radius: $element_border_radius;
+  border-bottom-right-radius: $element_border_radius;
+  position: relative;
+  padding: .75rem 1.25rem;
+  background-color: transparent;
+  color: $white;
+  font-weight: 600;
+  right: -2px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+
+  &::-moz-focus-inner {
+      border: 0;
+      padding: 0;
+  }
+
+  &:hover {
+    background-color: $white;
+    color: $type_color;
+  }
+
+  &:after {
+    @include transition();
+    @include gradient();
+    content: 'A';
+    color: transparent;
+    display: block;
+    position: absolute;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -2px;
+    margin: auto;
+    border-top-left-radius: $element_border_radius;
+    border-bottom-right-radius: $element_border_radius;
+    z-index: -1;
+    box-sizing: border-box;
+    background-clip: padding-box;
+  }
+}
+
+.o-button--outline {
+  border: 2px solid $white;
+
+  &:hover {
+
+    &:after {
+      background: $white;
+    }
+  }
+}
+
+.o-button--ghost {
+
+  &:after {
+    background: rgba($white, .25);
+    border: 2px solid rgba($white, .25);
+  }
+
+  &:hover {
+
+    &:after {
+      background: $white;
+    }
+  }
+}
