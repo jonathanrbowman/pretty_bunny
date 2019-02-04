@@ -12,6 +12,9 @@ html, body {
 body {
   font-size: 16px; }
 
+a {
+  text-decoration: none; }
+
 #main {
   padding: 20px; }
   @media screen and (min-width: 640px) {
@@ -34,6 +37,95 @@ hr {
 
 :-moz-placeholder {
   color: #FFFFFF; }
+
+.c-nav {
+  font-size: 0;
+  list-style: none;
+  margin: 0;
+  padding: 1.25rem 0; }
+  .c-nav.c-nav--dark {
+    background-color: #272C40;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.75); }
+
+.c-nav__item {
+  display: inline-block;
+  position: relative;
+  margin-right: 1rem; }
+  .c-nav__item:last-child {
+    margin-right: 0; }
+  .c-nav__item a {
+    -webkit-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+    -moz-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+    -o-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+    /* easeOutQuint */
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 5px; }
+    .c-nav__item a:hover {
+      background-color: #00A3E0;
+      color: #FFFFFF; }
+      .c-nav__item a:hover .o-icon {
+        fill: #FFFFFF; }
+    .c-nav--dark .c-nav__item a {
+      color: #FFFFFF; }
+      .c-nav--dark .c-nav__item a .o-icon {
+        fill: #FFFFFF; }
+
+.c-nav__item--has-subnav {
+  z-index: 1; }
+  .c-nav__item--has-subnav:hover .c-nav__sub-nav {
+    opacity: 1;
+    visibility: visible; }
+
+.c-nav__sub-nav {
+  -webkit-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+  -o-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+  /* easeOutQuint */
+  width: 100%;
+  min-width: 250px;
+  position: absolute;
+  display: block;
+  list-style: none;
+  top: 180%;
+  left: -16px;
+  background-color: #272C40;
+  border-radius: 5px;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.75); }
+  .c-nav__sub-nav:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -26px;
+    width: 100%;
+    height: 26px;
+    z-index: -1; }
+  .c-nav__sub-nav .c-nav__item {
+    margin: 0;
+    display: block;
+    text-transform: none; }
+    .c-nav__sub-nav .c-nav__item a {
+      display: block;
+      margin: 0;
+      padding: 0;
+      border-radius: 0;
+      padding: 1rem 2rem;
+      color: #FFFFFF; }
+      .c-nav__sub-nav .c-nav__item a:hover {
+        background-color: transparent;
+        color: #00A3E0; }
+    .c-nav__sub-nav .c-nav__item:first-child a {
+      padding-top: 2rem; }
+    .c-nav__sub-nav .c-nav__item:last-child a {
+      padding-bottom: 2rem; }
 
 .o-button-group {
   font-size: 0; }
@@ -65,10 +157,10 @@ hr {
   -webkit-appearance: none;
   outline: none;
   cursor: pointer;
-  -webkit-transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
-  -moz-transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
-  -o-transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
-  transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+  -o-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
   /* easeOutQuint */
   display: inline-block;
   border-top-left-radius: 10px;
@@ -88,10 +180,10 @@ hr {
     background-color: #FFFFFF;
     color: #222222; }
   .o-button:after {
-    -webkit-transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
-    -moz-transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
-    -o-transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
-    transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+    -webkit-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+    -moz-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+    -o-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
     /* easeOutQuint */
     background: #009a44;
     background: -moz-linear-gradient(left, #009a44 0%, #007dba 100%);
@@ -136,10 +228,10 @@ hr {
     margin-right: 0; }
 
 .o-icon {
-  -webkit-transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
-  -moz-transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
-  -o-transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
-  transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+  -o-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
   /* easeOutQuint */
   width: 32px;
   height: 32px;
@@ -147,8 +239,9 @@ hr {
   fill: #222222; }
   .o-icon-group--light .o-icon {
     fill: #FFFFFF; }
-  .o-icon:hover {
-    transform: scale(1.2); }
+
+.o-icon--actionable:hover {
+  transform: scale(1.2); }
 
 .o-icon--animated-prompt {
   background-color: #E57200;
@@ -179,6 +272,11 @@ hr {
       fill: #FFFFFF; }
     .o-icon--circle-fill.o-icon--close:active {
       background-color: #C8102E; }
+
+.o-icon--text-inline {
+  vertical-align: middle;
+  width: 1em;
+  padding-bottom: .25em; }
 
 @keyframes animated_prompt_colors {
   0% {
@@ -221,10 +319,10 @@ hr {
   font-size: .9rem; }
 
 .o-input__field {
-  -webkit-transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
-  -moz-transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
-  -o-transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
-  transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+  -o-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
   /* easeOutQuint */
   width: 100%;
   font-size: 1rem;
@@ -242,10 +340,10 @@ hr {
     padding-right: 53px; }
 
 .o-input__action {
-  -webkit-transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
-  -moz-transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
-  -o-transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
-  transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+  -o-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
   /* easeOutQuint */
   width: 43px;
   height: 100%;

@@ -20,7 +20,9 @@
   .o-icon-group--light & {
     fill: $white;
   }
+}
 
+.o-icon--actionable {
   &:hover {
     transform: scale(1.2);
   }
@@ -66,6 +68,12 @@
       background-color: $red;
     }
   }
+}
+
+.o-icon--text-inline {
+  vertical-align: middle;
+  width: 1em;
+  padding-bottom: .25em;
 }
 
 @keyframes animated_prompt_colors {

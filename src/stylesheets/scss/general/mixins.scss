@@ -5,7 +5,7 @@
   background: linear-gradient(to right, $start 0%, $end 100%);
 }
 
-@mixin transition($property: all, $duration: .35s) {
+@mixin transition($property: all, $duration: .25s) {
   -webkit-transition: $property $duration cubic-bezier(0.230, 1.000, 0.320, 1.000);
    -moz-transition: $property $duration cubic-bezier(0.230, 1.000, 0.320, 1.000);
      -o-transition: $property $duration cubic-bezier(0.230, 1.000, 0.320, 1.000);

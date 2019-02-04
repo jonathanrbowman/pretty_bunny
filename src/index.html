@@ -12,6 +12,10 @@
 
     <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
+    <symbol id="o-icon--chevron" viewBox="0 0 24 24">
+    <title>chevron</title>
+    <path d="M2.813 4.594l9.188 9.188 9.188-9.188 2.813 2.813-12 12-12-12z"></path>
+    </symbol>
     <symbol id="o-icon--close" viewBox="0 0 24 24">
     <title>close</title>
     <path d="M24 2.416l-9.584 9.584 9.584 9.584-2.416 2.416-9.584-9.584-9.584 9.584-2.416-2.416 9.584-9.584-9.584-9.584 2.416-2.416 9.584 9.584 9.584-9.584z"></path>
@@ -79,7 +83,7 @@
 
       <h4 class="o-heading">Variants</h4>
 
-      <div style="padding: 1rem; background-color: #444444; border-radius: 10px;">
+      <div style="padding: 1rem; background-color: #272C40; border-radius: 10px;">
 
         <div class="o-button-group">
           <div class="o-button-wrapper">
@@ -121,22 +125,22 @@
       <h4 class="o-heading">Social</h4>
 
       <div class="o-icon-group" style="padding: 1rem;">
-        <svg class="o-icon o-icon--instagram"><use xlink:href="#o-icon--instagram"></use></svg>
-        <svg class="o-icon o-icon--twitter"><use xlink:href="#o-icon--twitter"></use></svg>
-        <svg class="o-icon o-icon--facebook"><use xlink:href="#o-icon--facebook"></use></svg>
-        <svg class="o-icon o-icon--linkedin"><use xlink:href="#o-icon--linkedin"></use></svg>
-        <svg class="o-icon o-icon--pinterest"><use xlink:href="#o-icon--pinterest"></use></svg>
-        <svg class="o-icon o-icon--youtube"><use xlink:href="#o-icon--youtube"></use></svg>
+        <svg class="o-icon  o-icon--actionable  o-icon--instagram"><use xlink:href="#o-icon--instagram"></use></svg>
+        <svg class="o-icon  o-icon--actionable  o-icon--twitter"><use xlink:href="#o-icon--twitter"></use></svg>
+        <svg class="o-icon  o-icon--actionable  o-icon--facebook"><use xlink:href="#o-icon--facebook"></use></svg>
+        <svg class="o-icon  o-icon--actionable  o-icon--linkedin"><use xlink:href="#o-icon--linkedin"></use></svg>
+        <svg class="o-icon  o-icon--actionable  o-icon--pinterest"><use xlink:href="#o-icon--pinterest"></use></svg>
+        <svg class="o-icon  o-icon--actionable  o-icon--youtube"><use xlink:href="#o-icon--youtube"></use></svg>
       </div>
 
       <div class="u-gradient-background" style="display: inline-block; padding: 1.25rem; padding-bottom: 0;">
         <div class="o-icon-group  o-icon-group--light">
-          <svg class="o-icon o-icon--instagram"><use xlink:href="#o-icon--instagram"></use></svg>
-          <svg class="o-icon o-icon--twitter"><use xlink:href="#o-icon--twitter"></use></svg>
-          <svg class="o-icon o-icon--facebook"><use xlink:href="#o-icon--facebook"></use></svg>
-          <svg class="o-icon o-icon--linkedin"><use xlink:href="#o-icon--linkedin"></use></svg>
-          <svg class="o-icon o-icon--pinterest"><use xlink:href="#o-icon--pinterest"></use></svg>
-          <svg class="o-icon o-icon--youtube"><use xlink:href="#o-icon--youtube"></use></svg>
+          <svg class="o-icon  o-icon--actionable  o-icon--instagram"><use xlink:href="#o-icon--instagram"></use></svg>
+          <svg class="o-icon  o-icon--actionable  o-icon--twitter"><use xlink:href="#o-icon--twitter"></use></svg>
+          <svg class="o-icon  o-icon--actionable  o-icon--facebook"><use xlink:href="#o-icon--facebook"></use></svg>
+          <svg class="o-icon  o-icon--actionable  o-icon--linkedin"><use xlink:href="#o-icon--linkedin"></use></svg>
+          <svg class="o-icon  o-icon--actionable  o-icon--pinterest"><use xlink:href="#o-icon--pinterest"></use></svg>
+          <svg class="o-icon  o-icon--actionable  o-icon--youtube"><use xlink:href="#o-icon--youtube"></use></svg>
         </div>
       </div>
 
@@ -157,7 +161,7 @@
 
       <h4 class="o-heading">Input With Action</h4>
 
-      <div style="padding: 1rem; background-color: #444444; border-radius: 10px;">
+      <div style="padding: 1rem; background-color: #272C40; border-radius: 10px;">
         <label class="o-input__label">Input label</label>
         <div class="o-input">
           <input type="text" name="text_input_field" class="o-input__field" placeholder="Jonathan Bowman">
@@ -166,7 +170,7 @@
 
       <br>
 
-      <div style="padding: 1rem; background-color: #444444; border-radius: 10px;">
+      <div style="padding: 1rem; background-color: #272C40; border-radius: 10px;">
         <label class="o-input__label">Input label</label>
         <div class="o-input  o-input--with-action">
           <input type="text" name="text_input_field" class="o-input__field" placeholder="bowman@swiftbunny.com">
@@ -175,6 +179,75 @@
           </div>
         </div>
       </div>
+
+      <br>
+      <br>
+
+      <h2>Menu</h2>
+
+      <hr>
+
+      <br>
+
+      <nav>
+        <div style="display: inline-block; width: 40%;">
+          <ul class="c-nav">
+            <li class="c-nav__item">
+              <a href="#">Solutions</a>
+            </li>
+            <li class="c-nav__item">
+              <a href="#">About</a>
+            </li>
+            <li class="c-nav__item  c-nav__item--has-subnav">
+              <a href="#">Resources <svg class="o-icon  o-icon--text-inline  o-icon--chevron"><use xlink:href="#o-icon--chevron"></use></svg></a>
+              <ul class="c-nav__sub-nav">
+                <li class="c-nav__item">
+                  <a href="#">Subnav 1</a>
+                </li>
+                <li class="c-nav__item">
+                  <a href="#">Subnav 2</a>
+                </li>
+                <li class="c-nav__item">
+                  <a href="#">Subnav 3</a>
+                </li>
+              </ul>
+            </li>
+            <li class="c-nav__item">
+              <a href="#">Press</a>
+            </li>
+          </ul>
+        </div>
+
+        <div style="display: inline-block; width: 40%;">
+          <ul class="c-nav  c-nav--dark">
+            <li class="c-nav__item">
+              <a href="#">Solutions</a>
+            </li>
+            <li class="c-nav__item">
+              <a href="#">About</a>
+            </li>
+            <li class="c-nav__item  c-nav__item--has-subnav">
+              <a href="#">Resources <svg class="o-icon  o-icon--text-inline  o-icon--chevron"><use xlink:href="#o-icon--chevron"></use></svg></a>
+              <ul class="c-nav__sub-nav">
+                <li class="c-nav__item">
+                  <a href="#">Subnav 1</a>
+                </li>
+                <li class="c-nav__item">
+                  <a href="#">Subnav 2</a>
+                </li>
+                <li class="c-nav__item">
+                  <a href="#">Subnav 3</a>
+                </li>
+              </ul>
+            </li>
+            <li class="c-nav__item">
+              <a href="#">Press</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     </div>
 
