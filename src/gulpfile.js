@@ -3,7 +3,7 @@ var sass = require('gulp-sass');
 var babel = require('gulp-babel');
 
 gulp.task('stylesheets', function() {
-  gulp.src('./stylesheets/scss/pretty_bunny.scss')
+  gulp.src('./stylesheets/scss/pretty_bunny_style.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('../vendor/assets/stylesheets/css/'));
 });
