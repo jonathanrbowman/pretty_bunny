@@ -53,8 +53,9 @@ hr {
     -o-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
     transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
     /* easeOutQuint */
+    display: block;
     font-size: 1rem;
-    padding: .5rem 1rem;
+    padding: .15rem 1rem;
     text-transform: uppercase;
     font-weight: 600;
     border-radius: 5px; }
