@@ -4,6 +4,32 @@
     {
       "icon": {
         "paths": [
+          "M120 196l392 392 392-392 120 120-512 512-512-512z"
+        ],
+        "attrs": [],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "keyboard_arrow_down"
+        ],
+        "defaultCode": 58131,
+        "grid": 16
+      },
+      "attrs": [],
+      "properties": {
+        "ligatures": "keyboard_arrow_down",
+        "id": 8,
+        "order": 31,
+        "prevSize": 24,
+        "name": "chevron"
+      },
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
           "M1024 103.087l-408.913 408.913 408.913 408.913-103.087 103.087-408.913-408.913-408.913 408.913-103.087-103.087 408.913-408.913-408.913-408.913 103.087-103.087 408.913 408.913 408.913-408.913z"
         ],
         "attrs": [],
@@ -25,7 +51,7 @@
       },
       "setIdx": 0,
       "setId": 1,
-      "iconIdx": 0
+      "iconIdx": 1
     },
     {
       "icon": {
@@ -45,13 +71,13 @@
       "properties": {
         "ligatures": "arrow_downward",
         "id": 6,
-        "order": 22,
+        "order": 30,
         "prevSize": 24,
         "name": "arrow--down"
       },
       "setIdx": 0,
       "setId": 1,
-      "iconIdx": 1
+      "iconIdx": 2
     },
     {
       "icon": {
@@ -81,7 +107,7 @@
       },
       "setIdx": 0,
       "setId": 1,
-      "iconIdx": 2
+      "iconIdx": 3
     },
     {
       "icon": {
@@ -111,7 +137,7 @@
       },
       "setIdx": 0,
       "setId": 1,
-      "iconIdx": 3
+      "iconIdx": 4
     },
     {
       "icon": {
@@ -147,7 +173,7 @@
       },
       "setIdx": 0,
       "setId": 1,
-      "iconIdx": 4
+      "iconIdx": 5
     },
     {
       "icon": {
@@ -178,7 +204,7 @@
       },
       "setIdx": 0,
       "setId": 1,
-      "iconIdx": 5
+      "iconIdx": 6
     },
     {
       "icon": {
@@ -208,7 +234,7 @@
       },
       "setIdx": 0,
       "setId": 1,
-      "iconIdx": 6
+      "iconIdx": 7
     },
     {
       "icon": {
@@ -244,7 +270,7 @@
       },
       "setIdx": 0,
       "setId": 1,
-      "iconIdx": 7
+      "iconIdx": 8
     }
   ],
   "height": 1024,

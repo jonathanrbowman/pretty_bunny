@@ -1,5 +1,9 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<symbol id="o-icon--chevron" viewBox="0 0 24 24">
+<title>chevron</title>
+<path d="M2.813 4.594l9.188 9.188 9.188-9.188 2.813 2.813-12 12-12-12z"></path>
+</symbol>
 <symbol id="o-icon--close" viewBox="0 0 24 24">
 <title>close</title>
 <path d="M24 2.416l-9.584 9.584 9.584 9.584-2.416 2.416-9.584-9.584-9.584 9.584-2.416-2.416 9.584-9.584-9.584-9.584 2.416-2.416 9.584 9.584 9.584-9.584z"></path>
