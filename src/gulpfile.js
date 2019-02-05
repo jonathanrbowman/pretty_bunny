@@ -3,13 +3,13 @@ var sass = require('gulp-sass');
 var babel = require('gulp-babel');
 
 gulp.task('stylesheets', function() {
-  gulp.src('./stylesheets/scss/pretty_bunny_style.scss')
+  gulp.src('./stylesheets/scss/pretty_bunny_styles.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('../vendor/assets/stylesheets/css/'));
+    .pipe(gulp.dest('../vendor/assets/stylesheets/'));
 });
 
 gulp.task('scripts', function() {
-  gulp.src('./javascripts/pretty_bunny.js')
+  gulp.src('./javascripts/pretty_bunny_scripts.js')
     .pipe(babel({
         presets: ['es2015']
     }))
