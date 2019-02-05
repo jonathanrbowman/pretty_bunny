@@ -15,12 +15,6 @@ body {
 a {
   text-decoration: none; }
 
-#main {
-  padding: 20px; }
-  @media screen and (min-width: 640px) {
-    #main {
-      padding: 60px; } }
-
 hr {
   border: 0;
   height: 1px;
