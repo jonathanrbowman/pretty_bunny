@@ -53,6 +53,7 @@
   &:hover .c-nav__sub-nav {
     opacity: 1;
     visibility: visible;
+    transform: translateY(0);
   }
 }
 
@@ -71,6 +72,7 @@
   padding: 0;
   opacity: 0;
   visibility: hidden;
+  transform: translateY(-10px);
   box-shadow: 0 1px 3px 0 rgba($black, .75);
 
   &:after {
